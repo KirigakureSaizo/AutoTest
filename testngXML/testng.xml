@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="apiAutoTest" verbose="1">
+    <parameter name="variableSheetName" value="variable"/>
+    <test name="life-is-good" enabled="true">
+        <parameter name="excelPath" value="caseData/caseData.xlsx"/>
+        <parameter name="dataSheetName" value="case"/>
+        <classes>
+            <class name="com.skep.autotest.test.BaseCase"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,35 @@
+2024-04-30 18:15:56 INFO  BaseCase:52 - excelPath: caseData/caseData.xlsx
+2024-04-30 18:15:56 INFO  BaseCase:53 - caseSheetName: case
+2024-04-30 18:15:56 INFO  BaseCase:54 - variableSheetName: variable
+2024-04-30 18:15:56 INFO  ExcelUtil:22 - ===================开始读取sheet: case
+2024-04-30 18:15:56 INFO  ExcelUtil:81 - ===================读取sheet完成: case
+2024-04-30 18:15:56 INFO  ExcelUtil:22 - ===================开始读取sheet: variable
+2024-04-30 18:15:56 INFO  ExcelUtil:81 - ===================读取sheet完成: variable
+2024-04-30 18:16:01 INFO  BaseCase:86 - url: /user/login
+2024-04-30 18:16:01 INFO  BaseCase:87 - requestMethod: post
+2024-04-30 18:16:01 INFO  BaseCase:88 - headers: {"Content-Type":"application/json"}
+2024-04-30 18:16:01 INFO  BaseCase:89 - parameters: {"username":"#{username}","password":"#{password_correct}"}
+2024-04-30 18:16:01 INFO  BaseCase:90 - globalVariables: token=$.token;
+2024-04-30 18:16:01 INFO  BaseCase:91 - assertFields: $.msg=登录成功;
+2024-04-30 18:16:01 INFO  BaseCase:93 - 处理前的请求参数是：{"username":"#{username}","password":"#{password_correct}"}
+2024-04-30 18:16:01 INFO  BaseCase:98 - 处理后的请求参数是：{"username":"skep","password":"12345"}
+2024-04-30 18:16:01 INFO  BaseCase:102 - http://localhost:8888/user/login
+2024-04-30 18:16:05 INFO  BaseCase:113 - json请求返回结果： 
+2024-04-30 18:16:05 INFO  BaseCase:131 - 开始保存全局变量：token=$.token;
+2024-04-30 18:16:05 INFO  BaseCase:86 - url: /product/add
+2024-04-30 18:16:05 INFO  BaseCase:87 - requestMethod: post
+2024-04-30 18:16:05 INFO  BaseCase:88 - headers: {"Content-Type":"application/json"}
+2024-04-30 18:16:05 INFO  BaseCase:89 - parameters: {"product":{"price":9999,"productName":"#{productname}"},"token":"${token}"}
+2024-04-30 18:16:05 INFO  BaseCase:90 - globalVariables: 
+2024-04-30 18:16:05 INFO  BaseCase:91 - assertFields: $.msg=添加商品成功;
+2024-04-30 18:16:05 INFO  BaseCase:93 - 处理前的请求参数是：{"product":{"price":9999,"productName":"#{productname}"},"token":"${token}"}
+2024-04-30 18:16:05 INFO  BaseCase:86 - url: /product/findByName
+2024-04-30 18:16:05 INFO  BaseCase:87 - requestMethod: get
+2024-04-30 18:16:05 INFO  BaseCase:88 - headers: {}
+2024-04-30 18:16:05 INFO  BaseCase:89 - parameters: {"name":"#{productname}"}
+2024-04-30 18:16:05 INFO  BaseCase:90 - globalVariables: 
+2024-04-30 18:16:05 INFO  BaseCase:91 - assertFields: $.msg=查询商品成功;
+2024-04-30 18:16:05 INFO  BaseCase:93 - 处理前的请求参数是：{"name":"#{productname}"}
+2024-04-30 18:16:05 INFO  BaseCase:98 - 处理后的请求参数是：{"name":"thinkpad"}
+2024-04-30 18:16:05 INFO  BaseCase:102 - http://localhost:8888/product/findByName
+2024-04-30 18:16:09 INFO  BaseCase:126 - k-v请求返回结果： 
